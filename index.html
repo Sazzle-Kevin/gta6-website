@@ -18,7 +18,7 @@
     <section class="hero"></section>
 
     <!-- ========================= -->
-    <!-- Gallery -->
+    <!-- charackters -->
     <!-- ========================= -->
 
     <section class="characters">
@@ -60,7 +60,7 @@
                 </p>
 
                 <button class="character-button" data-character="kevin">
-                    Akte öffnen
+                  Akte öffnen
                 </button>
 
             </div>
@@ -96,8 +96,50 @@
 
 </div>
 
-<section class="characters">
+
+<!-- ========================= -->
+<!-- GTA Character File -->
+<!-- ========================= -->
+
+<div id="characterModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div class="modal-header">
+
+            <img id="modalImage" src="" alt="Character">
+
+            <div>
+
+                <h1 id="modalName"></h1>
+
+                <p class="classified">
+                    CLASSIFIED
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p><strong>🎯 Rolle:</strong> <span id="modalRole"></span></p>
+
+        <p><strong>🔫 Primärwaffe:</strong> <span id="modalWeapon"></span></p>
+
+        <p><strong>🚗 Fahrzeug:</strong> <span id="modalVehicle"></span></p>
+
+        <p><strong>⭐ Rang:</strong> <span id="modalRank"></span></p>
+
+        <p><strong>💰 Vermögen:</strong> <span id="modalMoney"></span></p>
+
+    </div>
+
+<script src="js/characters.js"></script>
 
 </body>
+
 
 </html>
