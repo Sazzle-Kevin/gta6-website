@@ -1,0 +1,29 @@
+/* Imports */
+@import url(header.css);
+@import url(hero.css);
+@import url(gallery.css);
+@import url(characters.css);
+@import url(footer.css);
+
+/* Variables */
+:root {
+  /* Colors */
+  --background-dark: oklch(0.15 0.03 270);
+  --background-light: oklch(0.22 0.04 280);
+  --primary-accent: oklch(0.65 0.26 340);
+  --secondary-accent: oklch(0.7 0.19 230);
+  --highlight: oklch(0.75 0.21 55);
+  --base-text: oklch(0.97 0.01 270);
+  --muted-text: oklch(0.75 0.02 270);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Styles */
+body {
+}
