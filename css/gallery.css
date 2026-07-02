@@ -1,0 +1,19 @@
+/* ========================= */
+/* Gallery Styles */
+/* ========================= */
+
+.gallery{
+    padding:120px 40px 80px;
+}
+
+.gallery-title{
+    text-align:center;
+    font-size:clamp(4rem,7vw,6rem);
+    color:oklch(76.62% 0.12744 70.638);
+    margin-bottom:80px;
+    letter-spacing:3px;
+
+    text-shadow:
+        0 0 15px rgba(0,0,0,.6),
+        0 0 25px rgba(212,175,55,.5);
+}
