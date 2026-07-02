@@ -1,0 +1,17 @@
+/* Imports */
+@import url(header.css);
+@import url(hero.css);
+@import url(gallery.css);
+@import url(characters.css);
+@import url(footer.css);
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Styles */
+body {
+}
