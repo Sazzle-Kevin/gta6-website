@@ -26,4 +26,8 @@
 
 /* Page Styles */
 body {
+  background-color: var(--background-light);
+  height: 20000px;
+  margin: 0;
+  padding: 0;
 }
