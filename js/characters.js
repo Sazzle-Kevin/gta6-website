@@ -1,6 +1,6 @@
 
 // =========================
-// Character Data
+// Character Data KI Erstellt !!!!
 // =========================
 
 const characters = {
@@ -55,7 +55,7 @@ const characters = {
 
         weapon: "MP5",
 
-        vehicle: "Audi RS6",
+        vehicle: "Vespa 946",
 
         money: "$120.500.000",
 
@@ -68,7 +68,7 @@ const characters = {
 };
 
 // =========================
-// Elemente auswählen
+// Elemente auswählen KI Erstellt !!
 // =========================
 
 const modal = document.getElementById("characterModal");
@@ -81,7 +81,7 @@ const buttons = document.querySelectorAll(".character-button");    /* Alle Butto
 const closeButton = document.querySelector(".close");
 
 // =========================
-// Button Klick
+// Button Klick KI Erstellt
 // =========================
 
 buttons.forEach((button) => {
@@ -111,7 +111,7 @@ buttons.forEach((button) => {
 });
 
 // =========================
-// Modal schließen
+// Modal schließen KI Erstellt !!
 // =========================
 
 closeButton.addEventListener("click", () => {

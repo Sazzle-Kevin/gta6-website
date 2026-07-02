@@ -67,7 +67,7 @@
 
     object-position:center top;
 
-    display:block;
+    display:block;                    /* Ensure the image is a block element */
 
     transition:.35s ease;
 
@@ -91,7 +91,7 @@
 }
 .character-description{
     text-align:center;
-    padding:0 20px;
+    padding:0 20px;       /* Add horizontal padding for better readability */
     line-height:1.7;
     margin-top:15px;
     margin-bottom:25px;
