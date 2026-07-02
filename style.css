@@ -4,4 +4,6 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    min-height: 100vh;
+}
