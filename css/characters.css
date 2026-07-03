@@ -11,17 +11,21 @@
 .character-container {
   max-width: 1200px;
 
+  max-width: 1400px;
+
   margin: 0 auto;
 
-  padding-top: 220px;
+  padding-top: 120px;
+
+  padding-bottom: 120px;
 
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 260px);
 
-  justify-items: center;
+  justify-content: center;
 
-  gap: 40px;
+  gap: 300px;
 }
 
 /* ========================= */
@@ -31,9 +35,9 @@
 .character-card {
   width: 220px;
 
-  height: 570px;
+  width: 260px;
 
-  background: rgba(7, 2, 2, 0.78);
+  height: 620px;
 
   border: 2px solid var(--gold);
 
@@ -42,6 +46,8 @@
   overflow: hidden;
 
   backdrop-filter: blur(8px);
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 
@@ -60,7 +66,7 @@
 .character-card img {
   width: 100%;
 
-  height: 300px;
+  height: 350px;
 
   object-fit: cover;
 
@@ -86,7 +92,7 @@
 }
 .character-description {
   text-align: center;
-  padding: 0 20px; /* Add horizontal padding for better readability */
+  padding: 0 20px;
   line-height: 1.7;
   margin-top: 15px;
   margin-bottom: 25px;
@@ -94,7 +100,7 @@
 }
 
 /* ========================= */
-/* Characters Header */
+/* Characters Header Unsere Crew */
 /* ========================= */
 .characters-header {
   display: flex;
@@ -103,7 +109,7 @@
 
   margin-top: 40px;
 
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .characters-title {
@@ -133,7 +139,23 @@
 
   box-shadow: 0 0 25px var(--gold);
 
+  box-shadow: 0 0 25px var(--gold);
+
   transform: translateY(-5px);
+}
+
+.character-info {
+  margin-top: 25px;
+}
+
+.character-info p {
+  margin: 18px 0;
+
+  font-size: 1.15rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding-bottom: 12px;
 }
 
 /*-========================= */
@@ -174,7 +196,7 @@
 }
 
 /* ========================= */
-/* GTA Character Modal */
+/* GTA Character Modal KI */
 /* ========================= */
 
 .modal {
@@ -197,8 +219,8 @@
 }
 
 .modal-content {
-  max-width: 600px;
-  width: 90%;
+  max-width: 850px;
+  width: 92%;
 
   background: #111;
 
@@ -206,21 +228,21 @@
 
   border-radius: 20px;
 
-  padding: 30px;
+  padding: 40px;
 
   color: white;
 
-  box-shadow: 0 0 30px rgba(246, 193, 93, 0.5);
+  box-shadow: 0 0 35px rgba(246, 193, 93, 0.6);
 }
 
 .modal-header {
   display: flex;
 
-  gap: 20px;
-
   align-items: center;
 
-  margin-bottom: 20px;
+  gap: 40px;
+
+  margin-bottom: 35px;
 }
 
 /* ========================= */
@@ -238,9 +260,11 @@
 #modalName {
   font-size: 2.2rem;
 
+  font-size: 3rem;
+
   color: var(--gold);
 
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .classified {
@@ -270,16 +294,23 @@
 .case-file {
   color: #999;
 
-  font-size: 0.9rem;
+  color: #9c9c9c;
+
+  letter-spacing: 3px;
 
   letter-spacing: 2px;
 
-  text-transform: uppercase;
+  margin-top: 8px;
 }
 
+/*--========================= -->
+/* Modal Image */
+/* ========================= */
+
 #modalImage {
-  width: 160px;
-  height: 220px;
+  width: 220px;
+
+  height: 300px;
 
   object-fit: cover;
 
@@ -310,4 +341,12 @@
 
 .close:hover {
   color: white;
+}
+
+.danger-stars {
+  color: gold;
+
+  font-size: 1.3rem;
+
+  letter-spacing: 4px;
 }
