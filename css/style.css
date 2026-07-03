@@ -27,9 +27,11 @@
 
 /* Page Styles */
 body {
-  background-image: url("../Bilder/Cover.png");
+  /* background-color: var(--background-light); */
+  background-image: url("../Bilder/gta6.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
