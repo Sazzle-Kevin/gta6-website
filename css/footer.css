@@ -2,7 +2,7 @@
 footer {
   background-color: var(--background-dark);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem;
   color: var(--muted-text);
