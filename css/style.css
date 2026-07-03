@@ -27,7 +27,7 @@
 
 /* Page Styles */
 body {
-  /* background-color: var(--background-light); */
+  background-color: var(--background-light);
   background-image: url("../Bilder/gta6.jpg");
   background-size: cover;
   background-position: center;
