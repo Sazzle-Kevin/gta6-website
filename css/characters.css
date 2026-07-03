@@ -8,24 +8,22 @@
 /* Character Container */
 /* ========================= */
 
-.character-container {
-  max-width: 1200px;
+.character-container{
 
-  max-width: 1400px;
+    max-width: 1400px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 
-  padding-top: 120px;
+    padding-top: 120px;
 
-  padding-bottom: 120px;
+    padding-bottom: 120px;
 
-  display: grid;
+    display: flex;
 
-  grid-template-columns: repeat(3, 260px);
+    justify-content: space-between;
 
-  justify-content: center;
+    align-items: flex-start;
 
-  gap: 300px;
 }
 
 /* ========================= */
@@ -33,7 +31,7 @@
 /* ========================= */
 
 .character-card {
-  width: 220px;
+
 
   width: 260px;
 
@@ -102,34 +100,40 @@
 /* ========================= */
 /* Characters Header Unsere Crew */
 /* ========================= */
-.characters-header {
-  display: flex;
+.characters-header{
 
-  justify-content: center;
+    display: flex;
 
-  margin-top: 40px;
+    justify-content: center;
 
-  margin-bottom: 100px;
+    margin-top: 40px;
+
+    margin-bottom: 40px;
+
+    
+
 }
 
 .characters-title {
   display: inline-block;
 
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 
   font-weight: bold;
 
   color: var(--gold);
 
-  padding: 15px;
+  padding: 20px;
 
   border: 2px solid transparent;
 
-  border-radius: 15px;
+  border-radius: 20px;
 
   cursor: pointer;
 
   transition: all 0.35s ease;
+
+  margin-top: 10px;
 }
 
 .characters-title:hover {
@@ -219,20 +223,22 @@
 }
 
 .modal-content {
-  max-width: 850px;
-  width: 92%;
 
-  background: #111;
+    width: min(700px, 90vw);  
+             
 
-  border: 2px solid var(--gold);
+    padding: 25px;       
 
-  border-radius: 20px;
+    background: #111;
 
-  padding: 40px;
+    border: 2px solid var(--gold);
 
-  color: white;
+    border-radius: 20px;
 
-  box-shadow: 0 0 35px rgba(246, 193, 93, 0.6);
+    color: white;
+
+    box-shadow: 0 0 35px rgba(246,193,93,.6);
+
 }
 
 .modal-header {
@@ -349,4 +355,52 @@
   font-size: 1.3rem;
 
   letter-spacing: 4px;
+}
+
+/* ========================= */
+/* Laptop */
+/* ========================= */
+
+@media (max-width: 1600px) {
+
+    .character-card{
+
+        width:220px;
+
+        height:540px;
+
+    }
+
+    .character-card img{
+
+        height:280px;
+
+    }
+
+    .character-name{
+
+        font-size:1.7rem;
+
+    }
+
+    .character-description{
+
+        font-size:.9rem;
+
+    }
+
+    .character-button{
+
+        width:160px;
+
+    }
+
+    .character-container{
+
+        grid-template-columns:repeat(3,220px);
+
+        gap:120px;
+
+    }
+
 }
