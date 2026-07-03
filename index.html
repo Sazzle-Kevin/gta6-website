@@ -113,7 +113,7 @@
 
             <p class="character-description">
               Der Stratege der Crew. Er plant jeden Coup bis ins Detail und
-              denkt immer mehrere Schritte voraus.
+              denkt immer voraus.
             </p>
 
             <button class="character-button" data-character="muju">
@@ -165,34 +165,60 @@
     <!-- ========================= -->
 
     <div id="characterModal" class="modal">
-      <div class="modal-content">
+
+    <div class="modal-content">
+
         <span class="close">&times;</span>
 
         <div class="modal-header">
-          <img id="modalImage" src="" alt="Character" />
 
-          <div class="modal-title">
-            <h2 id="modalName"></h2>
+            <img id="modalImage" src="" alt="Character">
 
-            <p class="classified">CLASSIFIED</p>
+            <div class="modal-title">
 
-            <p class="case-file">CASE FILE #0001</p>
-          </div>
+                <h2 id="modalName"></h2>
+
+                <p class="classified">
+                    CLASSIFIED
+                </p>
+
+                <p class="case-file">
+                    CASE FILE #VC-001
+                </p>
+
+            </div>
+
         </div>
 
-        <hr />
+        <hr>
 
-        <p><strong>🎯 Rolle:</strong> <span id="modalRole"></span></p>
+        <div class="character-info">
 
-        <p><strong>🔫 Primärwaffe:</strong> <span id="modalWeapon"></span></p>
+            <p><strong>🎯 Rolle:</strong> <span id="modalRole"></span></p>
 
-        <p><strong>🚗 Fahrzeug:</strong> <span id="modalVehicle"></span></p>
+            <p><strong>🔫 Primärwaffe:</strong> <span id="modalWeapon"></span></p>
 
-        <p><strong>⭐ Rang:</strong> <span id="modalRank"></span></p>
+            <p><strong>🚗 Fahrzeug:</strong> <span id="modalVehicle"></span></p>
 
-        <p><strong>💰 Vermögen:</strong> <span id="modalMoney"></span></p>
-      </div>
+            <p><strong>⭐ Rang:</strong> <span id="modalRank"></span></p>
+
+            <p><strong>💰 Vermögen:</strong> <span id="modalMoney"></span></p>
+
+            <p><strong>📍 Letzter Aufenthaltsort:</strong> <span id="modalLocation"></span></p>
+
+            <p><strong>⚠️ Gefährlichkeitsstufe:</strong> <span id="modalDanger" class="danger-stars"></span>
+
+            <p><strong>💼 Spezialgebiet:</strong> <span id="modalSkill"></span></p>
+
+            <p><strong>📅 Letzte Sichtung:</strong> <span id="modalSeen"></span></p>
+
+            <p><strong>📞 Kontakt:</strong> <span id="modalContact"></span></p>
+
+        </div>
+
     </div>
+
+</div>
     <!-- ========================= -->
     <!-- End of Character Modal -->
     <!-- ========================= -->
