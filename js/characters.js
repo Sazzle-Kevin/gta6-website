@@ -35,15 +35,17 @@ const characters = {
 
         weapon: "Goldene Pistole",
 
-        vehicle: "Lamborghini Revuelto",
+        vehicle:"Mercedes G Klasse Brabus",
 
         money: "$25.000.000",
 
         location: "Vice City",
 
+        danger: "★★★★★",
+
         image: "Bilder/Kevin.png"
 
-    },
+},
 
     christopher: {
 
@@ -62,6 +64,8 @@ const characters = {
         location: "Vice City",
 
         image: "Bilder/Christopher.png"
+
+    
 
     }
 
