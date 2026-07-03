@@ -2,12 +2,14 @@
 footer {
   background-color: var(--background-dark);
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
   color: var(--muted-text);
   gap: 1rem;
+  @media (width < 575px) {
+    flex-direction: column;
+  }
 }
 
 footer ul {
@@ -32,7 +34,9 @@ footer a {
   color: var(--base-text);
   font-size: 0.7rem;
 }
-
+.footer-left {
+  flex-shrink: 2;
+}
 .footer-center {
   display: flex;
   flex-direction: column;
