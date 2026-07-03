@@ -17,7 +17,7 @@
             <li><a href="#">Start</a></li>
             <li><a href="#hero">Held</a></li>
             <li><a href="#gallery">Galerie</a></li>
-            <li><a href="/">Charaktere</a></li>
+            <li><a href="#characters">Charaktere</a></li>
             <li><a href="#footer">Newsletter</a></li>
           </ul>
         </nav>
@@ -99,7 +99,7 @@
       <!-- Character Section -->
       <!-- ========================= -->
 
-      <section class="characters">
+      <section id="characters" class="characters">
         <div class="characters-header">
           <h1 class="characters-title">Unsere Crew</h1>
         </div>
@@ -165,60 +165,56 @@
     <!-- ========================= -->
 
     <div id="characterModal" class="modal">
-
-    <div class="modal-content">
-
+      <div class="modal-content">
         <span class="close">&times;</span>
 
         <div class="modal-header">
+          <img id="modalImage" src="" alt="Character" />
 
-            <img id="modalImage" src="" alt="Character">
+          <div class="modal-title">
+            <h2 id="modalName"></h2>
 
-            <div class="modal-title">
+            <p class="classified">CLASSIFIED</p>
 
-                <h2 id="modalName"></h2>
-
-                <p class="classified">
-                    CLASSIFIED
-                </p>
-
-                <p class="case-file">
-                    CASE FILE #VC-001
-                </p>
-
-            </div>
-
+            <p class="case-file">CASE FILE #VC-001</p>
+          </div>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="character-info">
+          <p><strong>🎯 Rolle:</strong> <span id="modalRole"></span></p>
 
-            <p><strong>🎯 Rolle:</strong> <span id="modalRole"></span></p>
+          <p><strong>🔫 Primärwaffe:</strong> <span id="modalWeapon"></span></p>
 
-            <p><strong>🔫 Primärwaffe:</strong> <span id="modalWeapon"></span></p>
+          <p><strong>🚗 Fahrzeug:</strong> <span id="modalVehicle"></span></p>
 
-            <p><strong>🚗 Fahrzeug:</strong> <span id="modalVehicle"></span></p>
+          <p><strong>⭐ Rang:</strong> <span id="modalRank"></span></p>
 
-            <p><strong>⭐ Rang:</strong> <span id="modalRank"></span></p>
+          <p><strong>💰 Vermögen:</strong> <span id="modalMoney"></span></p>
 
-            <p><strong>💰 Vermögen:</strong> <span id="modalMoney"></span></p>
+          <p>
+            <strong>📍 Letzter Aufenthaltsort:</strong>
+            <span id="modalLocation"></span>
+          </p>
 
-            <p><strong>📍 Letzter Aufenthaltsort:</strong> <span id="modalLocation"></span></p>
+          <p>
+            <strong>⚠️ Gefährlichkeitsstufe:</strong>
+            <span id="modalDanger" class="danger-stars"></span>
+          </p>
 
-            <p><strong>⚠️ Gefährlichkeitsstufe:</strong> <span id="modalDanger" class="danger-stars"></span>
+          <p>
+            <strong>💼 Spezialgebiet:</strong> <span id="modalSkill"></span>
+          </p>
 
-            <p><strong>💼 Spezialgebiet:</strong> <span id="modalSkill"></span></p>
+          <p>
+            <strong>📅 Letzte Sichtung:</strong> <span id="modalSeen"></span>
+          </p>
 
-            <p><strong>📅 Letzte Sichtung:</strong> <span id="modalSeen"></span></p>
-
-            <p><strong>📞 Kontakt:</strong> <span id="modalContact"></span></p>
-
+          <p><strong>📞 Kontakt:</strong> <span id="modalContact"></span></p>
         </div>
-
+      </div>
     </div>
-
-</div>
     <!-- ========================= -->
     <!-- End of Character Modal -->
     <!-- ========================= -->

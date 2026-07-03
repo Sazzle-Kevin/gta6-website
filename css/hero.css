@@ -32,10 +32,10 @@ h1 {
 
 .hero-text p {
   margin: 0;
-  font-size: min(2vw, 1.2rem);
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .hero-text p strong {
-  font-size: min(3vw, 1.8rem);
+  font-size: 1rem;
 }
