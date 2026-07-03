@@ -4,19 +4,21 @@
 
 .character-container{
 
-    max-width:1200px;
+    max-width: 1400px;
 
-    margin:0 auto;
+    margin: 0 auto;
 
-    padding-top:220px;
+    padding-top: 120px;
 
-    display:grid;
+    padding-bottom: 120px;
 
-    grid-template-columns:repeat(3,1fr);
+    display: grid;
 
-    justify-items:center;
+    grid-template-columns: repeat(3, 260px);
 
-    gap:40px;
+    justify-content: center;
+
+    gap: 300px;
 
 }
 
@@ -26,9 +28,9 @@
 
 .character-card{
 
-    width:220px;
+    width:260px;
 
-    height:570px;
+    height: 620px;
 
     background:rgba(7,2,2,.78);
 
@@ -43,6 +45,9 @@
     box-shadow:0 0 20px rgba(0,0,0,.55);
 
     transition:.35s ease;
+
+    
+    
 
 }
 
@@ -61,7 +66,7 @@
 
     width:100%;
 
-    height:300px;
+    height:350px;
 
     object-fit:cover;
 
@@ -92,7 +97,7 @@
 }
 .character-description{
     text-align:center;
-    padding:0 20px;       /* Add horizontal padding for better readability */
+    padding:0 20px;       
     line-height:1.7;
     margin-top:15px;
     margin-bottom:25px;
@@ -100,7 +105,7 @@
 }
 
 /* ========================= */
-/* Characters Header */
+/* Characters Header Unsere Crew */ 
 /* ========================= */
 .characters-header{
 
@@ -110,7 +115,7 @@
 
     margin-top:40px;
 
-    margin-bottom:120px;
+    margin-bottom:100px;
 
 }
 
@@ -146,6 +151,24 @@
     box-shadow:0 0 25px var(--gold);
 
     transform:translateY(-5px);
+
+}
+
+.character-info{
+
+    margin-top:25px;
+
+}
+
+.character-info p{
+
+    margin:18px 0;
+
+    font-size:1.15rem;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    padding-bottom:12px;
 
 }
 
@@ -195,7 +218,7 @@
 }
 
 /* ========================= */
-/* GTA Character Modal */
+/* GTA Character Modal KI */
 /* ========================= */
 
 .modal {
@@ -221,8 +244,8 @@
 
 .modal-content {
 
-    max-width: 600px;
-    width: 90%;
+    max-width: 850px;
+    width: 92%;
 
     background: #111;
 
@@ -230,24 +253,23 @@
 
     border-radius: 20px;
 
-    padding: 30px;
+    padding: 40px;
 
     color: white;
 
-    box-shadow: 0 0 30px rgba(246, 193, 93, .5);
-
+    box-shadow: 0 0 35px rgba(246,193,93,.6);
 
 }
 
-.modal-header {
+.modal-header{
 
-    display: flex;
+    display:flex;
 
-    gap: 20px;
+    align-items:center;
 
-    align-items: center;
+    gap:40px;
 
-    margin-bottom: 20px;
+    margin-bottom:35px;
 
 }
 
@@ -267,11 +289,11 @@
 
 #modalName{
 
-    font-size:2.2rem;
+    font-size:3rem;
 
     color:var(--gold);
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 
 }
 
@@ -303,28 +325,33 @@
 
 .case-file{
 
-    color:#999;
+    color:#9c9c9c;
+
+    letter-spacing:3px;
 
     font-size:.9rem;
 
-    letter-spacing:2px;
-
-    text-transform:uppercase;
+    margin-top:8px;
 
 }
 
-#modalImage {
+/*--========================= -->
+/* Modal Image */
+/* ========================= */
 
-    width: 160px;
-    height: 220px;
+#modalImage{
 
-    object-fit: cover;
+    width:220px;
 
-    border-radius: 15px;
+    height:300px;
 
-    border: 2px solid var(--gold);
+    object-fit:cover;
 
-    flex-shrink: 0;
+    border-radius:15px;
+
+    border:2px solid var(--gold);
+
+    flex-shrink:0;
 
 }
 
@@ -355,3 +382,14 @@
     color: white;
 
 }
+
+.danger-stars{
+
+    color: gold;
+
+    font-size:1.3rem;
+
+    letter-spacing:4px;
+
+}
+
