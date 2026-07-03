@@ -11,6 +11,7 @@
   margin-bottom: 1.5rem;
   font-size: min(4vw, 3rem);
   text-align: center;
+  color: var(--gold);
 }
 
 .gallery-images {
