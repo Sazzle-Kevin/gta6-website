@@ -27,9 +27,9 @@
 
 /* Page Styles */
 body {
-    background-image: url("../Bilder/Cover.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-image: url("../Bilder/Cover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }

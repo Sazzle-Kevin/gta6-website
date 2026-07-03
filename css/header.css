@@ -1,0 +1,122 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  left: 2%;
+  width: 96%;
+  height: 2.5rem;
+  color: var(--muted-text);
+  background-color: var(--background-light);
+  border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right in oklch,
+    oklch(38.1% 0.12522 315.263),
+    oklch(37.594% 0.05333 45.094)
+  );
+  border: 1px solid rgba(212, 75, 236, 0.8);
+  margin: 0;
+  height: 100%;
+  width: 10%;
+  box-shadow: 0 4px 12px rgba(236, 185, 75, 0.8);
+  border-radius: 0 0 12px 12px;
+  border: 2px dotted oklch(86.653% 0.02431 112.137 / 0.365);
+}
+
+header > div > a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition:
+    color 1s ease-in-out,
+    transform 0.3s ease;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+  width: 80%;
+  box-shadow: 0 4px 12px rgba(212, 75, 236, 0.8);
+  border-radius: 0 0 12px 12px;
+  border: 2px solid oklch(0.15 0.03 270);
+}
+
+header > nav > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 1%;
+  padding: 0;
+}
+
+header > nav > ul > li > a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition:
+    color 1s ease-in-out,
+    transform 0.3s ease;
+}
+
+header > nav > ul > li > a:hover {
+  background: linear-gradient(
+    to right in oklch,
+    oklch(61.738% 0.21558 314.884),
+    oklch(79.663% 0.12487 45.28)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.1);
+}
+
+header .preorder-link:hover {
+  background: linear-gradient(
+    to right in oklch,
+    oklch(74.585% 0.11994 71.137),
+    oklch(96.379% 0.15221 106.952)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.4);
+}
+
+.logo-container {
+  display: flex;
+  position: relative;
+  top: 2.5rem;
+  left: 40%;
+  justify-content: center;
+  width: 20%;
+  background-color: var(--background-light);
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(212, 75, 236, 0.6);
+}
+
+.logo-container > img {
+  position: sticky;
+  top: -2rem;
+  width: 100%;
+  scale: 105%;
+  padding: 0.4rem;
+}
+
+.gse8-pic {
+  width: 100%;
+}

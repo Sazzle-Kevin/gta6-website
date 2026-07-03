@@ -1,0 +1,41 @@
+.gallery {
+  width: 100%;
+  position: relative;
+  color: var(--base-text);
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 20rem;
+}
+
+.h2 {
+  margin-bottom: 1.5rem;
+  font-size: min(4vw, 3rem);
+  text-align: center;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vh;
+  padding: 0.5vh;
+}
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.gallery-item img:hover {
+  filter: grayscale(0%);
+  scale: 101%;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(80%);
+  border-radius: 12px;
+}
