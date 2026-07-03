@@ -1,197 +1,176 @@
+.characters {
+  background-image: url("../Bilder/Cover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* ========================= */
 /* Character Container */
 /* ========================= */
 
-.character-container{
+.character-container {
+  max-width: 1200px;
 
-    max-width:1200px;
+  margin: 0 auto;
 
-    margin:0 auto;
+  padding-top: 220px;
 
-    padding-top:220px;
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns:repeat(3,1fr);
+  justify-items: center;
 
-    justify-items:center;
-
-    gap:40px;
-
+  gap: 40px;
 }
 
 /* ========================= */
 /* Character Card */
 /* ========================= */
 
-.character-card{
+.character-card {
+  width: 220px;
 
-    width:220px;
+  height: 570px;
 
-    height:570px;
+  background: rgba(7, 2, 2, 0.78);
 
-    background:rgba(7,2,2,.78);
+  border: 2px solid var(--gold);
 
-    border:2px solid var(--gold);
+  border-radius: 20px;
 
-    border-radius:20px;
+  overflow: hidden;
 
-    overflow:hidden;
+  backdrop-filter: blur(8px);
 
-    backdrop-filter:blur(8px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 
-    box-shadow:0 0 20px rgba(0,0,0,.55);
-
-    transition:.35s ease;
-
+  transition: 0.35s ease;
 }
 
-.character-card:hover{
+.character-card:hover {
+  transform: translateY(-12px);
 
-    transform:translateY(-12px);
-
-    box-shadow:0 0 35px rgba(246,193,93,.75);
-
+  box-shadow: 0 0 35px rgba(246, 193, 93, 0.75);
 }
 /* ========================= */
 /* Character Image */
 /* ========================= */
 
-.character-card img{
+.character-card img {
+  width: 100%;
 
-    width:100%;
+  height: 300px;
 
-    height:300px;
+  object-fit: cover;
 
-    object-fit:cover;
+  object-position: center top;
 
-    object-position:center top;
+  display: block;
 
-    display:block;                    
-
-    transition:.35s ease;
-
+  transition: 0.35s ease;
 }
 
-.character-card:hover img{
-
-    transform:scale(1.05);
-
+.character-card:hover img {
+  transform: scale(1.05);
 }
 
-.character-name{
+.character-name {
+  color: var(--gold);
 
-    color:var(--gold);
+  text-align: center;
 
-    text-align:center;
+  font-size: 2rem;
 
-    font-size:2rem;
-
-    margin:20px 0 15px;
-
+  margin: 20px 0 15px;
 }
-.character-description{
-    text-align:center;
-    padding:0 20px;       /* Add horizontal padding for better readability */
-    line-height:1.7;
-    margin-top:15px;
-    margin-bottom:25px;
-    color:var(--base-text);
+.character-description {
+  text-align: center;
+  padding: 0 20px; /* Add horizontal padding for better readability */
+  line-height: 1.7;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: var(--base-text);
 }
 
 /* ========================= */
 /* Characters Header */
 /* ========================= */
-.characters-header{
+.characters-header {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  margin-top: 40px;
 
-    margin-top:40px;
-
-    margin-bottom:120px;
-
+  margin-bottom: 120px;
 }
 
+.characters-title {
+  display: inline-block;
 
-.characters-title{
+  font-size: 4.5rem;
 
-    display:inline-block;
+  font-weight: bold;
 
-    font-size:4.5rem;
+  color: var(--gold);
 
-    font-weight:bold;
+  padding: 15px;
 
-    color:var(--gold);
+  border: 2px solid transparent;
 
-    padding: 15px;
+  border-radius: 15px;
 
-    border:2px solid transparent;
+  cursor: pointer;
 
-    border-radius:15px;
-
-    cursor:pointer;
-
-    transition:all .35s ease;
-
+  transition: all 0.35s ease;
 }
 
-.characters-title:hover{
+.characters-title:hover {
+  border-color: var(--gold);
 
-    border-color:var(--gold);
+  background: rgba(0, 0, 0, 0.35);
 
-    background:rgba(0,0,0,.35);
+  box-shadow: 0 0 25px var(--gold);
 
-    box-shadow:0 0 25px var(--gold);
-
-    transform:translateY(-5px);
-
+  transform: translateY(-5px);
 }
 
 /*-========================= */
 /* Character Card Button */
 /* ========================= */
-.character-button{
+.character-button {
+  width: 180px;
 
-    width:180px;
+  margin: 25px auto;
 
-    margin:25px auto;
+  padding: 14px 0;
 
-    padding:14px 0;
+  display: block;
 
-    display:block;
+  border: none;
 
-    border:none;
+  border-radius: 40px;
 
-    border-radius:40px;
+  background: linear-gradient(135deg, #d99a2b, #f6c15d);
 
-    background:linear-gradient(
-        135deg,
-        #d99a2b,
-        #f6c15d
-    );
+  color: #111;
 
-    color:#111;
+  font-size: 1rem;
 
-    font-size:1rem;
+  font-weight: bold;
 
-    font-weight:bold;
+  cursor: pointer;
 
-    cursor:pointer;
+  transition: 0.3s ease;
 
-    transition:.3s ease;
-
-    box-shadow:0 0 18px rgba(246,193,93,.45);
-
+  box-shadow: 0 0 18px rgba(246, 193, 93, 0.45);
 }
 
-.character-button:hover{
+.character-button:hover {
+  transform: translateY(-3px);
 
-    transform:translateY(-3px);
-
-    box-shadow:0 0 30px rgba(246,193,93,.85);
-
+  box-shadow: 0 0 30px rgba(246, 193, 93, 0.85);
 }
 
 /* ========================= */
@@ -199,159 +178,136 @@
 /* ========================= */
 
 .modal {
+  display: none;
 
-    display: none;
+  position: fixed;
 
-    position: fixed;
+  top: 0;
+  left: 0;
 
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
 
-    width: 100%;
-    height: 100%;
+  background: rgba(0, 0, 0, 0.75);
 
-    background: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
 
-    justify-content: center;
-    align-items: center;
-
-    z-index: 9999;
-
+  z-index: 9999;
 }
 
 .modal-content {
+  max-width: 600px;
+  width: 90%;
 
-    max-width: 600px;
-    width: 90%;
+  background: #111;
 
-    background: #111;
+  border: 2px solid var(--gold);
 
-    border: 2px solid var(--gold);
+  border-radius: 20px;
 
-    border-radius: 20px;
+  padding: 30px;
 
-    padding: 30px;
+  color: white;
 
-    color: white;
-
-    box-shadow: 0 0 30px rgba(246, 193, 93, .5);
-
-
+  box-shadow: 0 0 30px rgba(246, 193, 93, 0.5);
 }
 
 .modal-header {
+  display: flex;
 
-    display: flex;
+  gap: 20px;
 
-    gap: 20px;
+  align-items: center;
 
-    align-items: center;
-
-    margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
 /* ========================= */
 /* Modal Title */
 /* ========================= */
 
-.modal-title{
+.modal-title {
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
-
-    justify-content:center;
-
+  justify-content: center;
 }
 
-#modalName{
+#modalName {
+  font-size: 2.2rem;
 
-    font-size:2.2rem;
+  color: var(--gold);
 
-    color:var(--gold);
-
-    margin-bottom:10px;
-
-}
-
-.classified{
-
-    display:inline-block;
-
-    width:max-content;
-
-    padding:6px 14px;
-
-    background:#7a0000;
-
-    color:white;
-
-    font-size:.85rem;
-
-    font-weight:bold;
-
-    letter-spacing:2px;
-
-    border-radius:6px;
-
-    transform:rotate(-8deg);
-
-    margin-bottom:12px;
-
-}
-
-.case-file{
-
-    color:#999;
-
-    font-size:.9rem;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-}
-
-#modalImage {
-
-    width: 160px;
-    height: 220px;
-
-    object-fit: cover;
-
-    border-radius: 15px;
-
-    border: 2px solid var(--gold);
-
-    flex-shrink: 0;
-
+  margin-bottom: 10px;
 }
 
 .classified {
+  display: inline-block;
 
-    color: var(--gold);
+  width: max-content;
 
-    font-weight: bold;
+  padding: 6px 14px;
 
-    margin-top: 10px;
+  background: #7a0000;
 
+  color: white;
+
+  font-size: 0.85rem;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  border-radius: 6px;
+
+  transform: rotate(-8deg);
+
+  margin-bottom: 12px;
+}
+
+.case-file {
+  color: #999;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+#modalImage {
+  width: 160px;
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  border: 2px solid var(--gold);
+
+  flex-shrink: 0;
+}
+
+.classified {
+  color: var(--gold);
+
+  font-weight: bold;
+
+  margin-top: 10px;
 }
 
 .close {
+  float: right;
 
-    float: right;
+  font-size: 35px;
 
-    font-size: 35px;
+  cursor: pointer;
 
-    cursor: pointer;
-
-    color: var(--gold);
-
+  color: var(--gold);
 }
 
 .close:hover {
-
-    color: white;
-
+  color: white;
 }
