@@ -2,13 +2,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   left: 2%;
   width: 96%;
   height: 2.5rem;
   color: var(--muted-text);
-  background-color: var(--background-light);
   border-radius: 0 0 12px 12px;
   box-sizing: border-box;
 }
@@ -51,6 +50,7 @@ header > nav {
   box-shadow: 0 4px 12px rgba(212, 75, 236, 0.8);
   border-radius: 0 0 12px 12px;
   border: 2px solid oklch(0.15 0.03 270);
+  background-color: var(--background-light);
 }
 
 header > nav > ul {
